@@ -1,0 +1,179 @@
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+#model {
+    color: white;
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:black!important;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, black),
+        color-stop(0.51, black)
+    );
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+    color: white;
+}
+
+/* Portrait layout (default) */
+.divIcon {
+    margin-top: 20%;
+}
+
+#divGif {
+    margin-top: 35%;
+}
+
+
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color: #0e091d;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+/* --------------------------------------- */
+::placeholder {
+    padding-left: 2%;
+}
+
+.divImg {
+    margin-top: 30%;
+}
+
+#divForm {
+}
+
+.inputForm {
+    border: solid 1px gray!important;
+    border-radius: 7px!important;
+    color: white!important;
+    
+    width: 90%!important;
+    margin-left: 5%!important;
+}
+
+.inputModal {
+    border: solid 1px gray!important;
+    border-radius: 7px!important;
+    color: black!important;
+    
+    width: 90%!important;
+    margin-left: 5%!important;
+}
+
+.btn {
+    background-color: #969696!important;
+    border-radius: 4px!important;
+    text-align: center;
+    color: black!important;
+}
+
+
+.white {
+    color: white;
+}
+
+.modal {
+    width: 100%!important;
+    height: 100%!important;
+    opacity: 0.9!important;
+    padding-top: 5%!important;
+    position: absolute!important;
+}
+
+#btnModalEnviar {
+    text-align: center;
+}
+
+
+.label1 {
+    margin-left: 20%;
+}
+
+.divImg {
+    border: solid 1px black;
+    padding-bottom: 20%!important;
+}
+
+#myImage {
+    width: 100%;
+    padding: 0!important;
+}
+
+.alert {
+    color: red;
+}
+
+#gif {
+    margin-top: 45%;
+    display: none;
+}
+
